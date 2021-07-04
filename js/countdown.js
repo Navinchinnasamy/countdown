@@ -8,8 +8,8 @@ window.addEventListener('load', function() {
 
 // countdown
 const year = new Date().getFullYear();
-const fourthOfJuly = new Date(year, 8, 22).getTime();
-const fourthOfJulyNextYear = new Date(year + 1, 8, 22).getTime();
+const fourthOfJuly = new Date(year, 7, 22).getTime();
+const fourthOfJulyNextYear = new Date(year + 1, 7, 22).getTime();
 const month = new Date().getMonth();
 let timer = setInterval(function() {
 
@@ -18,7 +18,7 @@ let timer = setInterval(function() {
 
 	// get the difference
 	let diff;
-	if (month > 8) {
+	if (month > 7) {
 		diff = fourthOfJulyNextYear - today;
 	} else {
 		diff = fourthOfJuly - today;
